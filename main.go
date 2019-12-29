@@ -230,7 +230,7 @@ func execute() {
 	)
 
 	rootCmd.Flags().BoolVarP(&acceptEULA, "accept-eula", "y", false, "automatically accept the Music Tribe End-User License Agreement")
-	rootCmd.Flags().StringVarP(&version, "xair-version", "v", "V1.5", "the version of X-AIR to download")
+	rootCmd.Flags().StringVarP(&version, "xair-version", "v", "1.5", "the version of X-AIR to download")
 
 	if err := rootCmd.Execute(); err != nil {
 		log.Fatal(err)
